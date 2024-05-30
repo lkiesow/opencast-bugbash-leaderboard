@@ -1,0 +1,43 @@
+body {
+	text-align: center;
+	font-family: sans;
+}
+
+header {
+	padding: 20px;
+}
+
+#edit {
+	display: none;
+}
+
+table {
+	min-width: 300px;
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+
+td {
+	text-align: left;
+	border-bottom: 1px solid silver;
+	padding: 8px 30px;
+}
+
+#board td {
+	font-size: 24px;
+}
+
+button {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+a.tablink {
+	display: block;
+	padding: 20px;
+	cursor: pointer;
+}
+
+form {
+	margin-bottom: 50px;
+}

@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang=en>
+<head>
+<meta http-equiv=content-type content="text/html; charset=utf-8" />
+<meta name=viewport content="width=device-width, initial-scale=1">
+<link rel=stylesheet type=text/css href=index.css />
+ <script src="index.js"></script>
+
+<title>Opencast Admin Interface BugBash</title>
+</head>
+<body>
+
+	<header>
+		<img src=opencast-bugbash.svg alt='Opencast BugBash' />
+	</header>
+
+	<main>
+		<div id=board>
+			<a class=tablink onclick='view("edit")'>Claim points →</a>
+			<h1>Leaderboard</h1>
+			<table></table>
+		</div>
+		<div id=edit>
+			<a class=tablink onclick='view("board")'>← Go to leaderboard</a>
+			<form id=form>
+				<input type=text id=username placeholder=Username />
+				<select id=type>
+					<option value=''>—select type—</option>
+					<option value=issue>Issue (1 point)</option>
+					<option value=trivial-pull-request>Trivial pull request (1 point)</option>
+					<option value=pull-request>Pull request (3 point)</option>
+					<option value=review>Review (1 point)</option>
+				</select>
+				<input type=url id=link placeholder='Link to issue, …' />
+				<button type=button onclick='add()'>Claim points</button>
+			</form>
+			<table></table>
+		</div>
+	</main>
+
+</body>
+</html>
