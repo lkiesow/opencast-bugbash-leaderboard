@@ -12,7 +12,6 @@ __SQL_CREATE = '''
         type varchar(255) NOT NULL,
         points unsigned int NOT NULL
     )'''
-# unixepoch()
 
 con = sqlite3.connect('leaderboard.db')
 cur = con.cursor()
@@ -65,7 +64,6 @@ def leaderboard():
         group by username
         order by sum_points desc;''')
     data = {d[0]: d[1] for d in data}
-    print(data)
     return jsonify(data)
 
 @app.route('/data')
@@ -76,7 +74,6 @@ def data():
         from leaderboard
         order by date desc;''')
     data = [(d[0], d[1], d[2], d[3], d[4]) for d in data]
-    print(data)
     return jsonify(data)
 
 
