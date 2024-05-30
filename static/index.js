@@ -49,7 +49,8 @@ function add() {
 			'type': type.value,
 			'points': VALUE_MAP[type.value]
 		}
-		console.info(data)
+		console.debug(data);
+		link.value = '';
 		fetch('/add', {
 			method: "POST",
 			headers: { "Content-Type": "application/json", },
