@@ -4,11 +4,13 @@ body {
 }
 
 header {
-	padding: 20px;
+	padding: 0px;
+	margin-top: 20px;
+	margin-bottom: -10px;
 }
 
 header img {
-  max-width: 100%;
+	max-width: 100%;
 }
 
 #edit {
@@ -31,17 +33,26 @@ td {
 	font-size: 24px;
 }
 
-button {
-	padding-left: 15px;
-	padding-right: 15px;
-}
-
 a.tablink {
-	display: block;
-	padding: 20px;
+	display: inline-block;
+	padding: 15px 40px;
+	border-radius: 35px;
 	cursor: pointer;
+	border: 2px solid rgb(75, 176, 123);
 }
 
 form {
-	margin-bottom: 50px;
+	margin: 40px auto;
+}
+
+button {
+	padding: 8px 25px;
+	background-color: #eee;
+}
+
+select, input {
+	background-color: transparent;
+	border: 1px solid gray;
+	border-radius: 5px;
+	padding: 8px;
 }
