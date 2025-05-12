@@ -27,10 +27,13 @@
 				<input type=text id=username placeholder=Username />
 				<select id=type>
 					<option value=''>—select type—</option>
-					<option value=issue>Issue (1 point)</option>
-					<option value=trivial-pull-request>Trivial pull request (1 point)</option>
-					<option value=pull-request>Pull request (3 points)</option>
-					<option value=review>Review (1 point)</option>
+					<option value=issue>Issue (2 point)</option>
+					<option value=trivial-pull-request>Trivial pull request (3 point)</option>
+					<option value=pull-request>Pull request (8 points)</option>
+					<option value=pull-request-critical>Pull request (high/critical) (10 points)</option>
+					<option value=review-code>Review code (2 point)</option>
+					<option value=review-func>Review functionality (1 point)</option>
+					<option value=review-full>Full review (3 point)</option>
 				</select>
 				<input type=url id=link placeholder='Link to issue, …' />
 				<button type=button onclick='add()'>Claim points</button>

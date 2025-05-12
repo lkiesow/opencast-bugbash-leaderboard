@@ -1,8 +1,11 @@
 const VALUE_MAP = {
-	'issue': 1,
-	'trivial-pull-request': 1,
-	'pull-request': 3,
-	'review': 1
+	'issue': 2,
+	'trivial-pull-request': 3,
+	'pull-request': 8,
+	'pull-request-critical': 10,
+	'review-code': 2,
+	'review-func': 1,
+	'review-full': 3,
 }
 
 function view(target) {
